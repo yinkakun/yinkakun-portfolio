@@ -8,10 +8,7 @@ export const shouldUpdateScroll = ({
     window.setTimeout(() => window.scrollTo(0, 0));
   } else {
     const savedPosition = getSavedScrollPosition(location) || [0, 0];
-    window.setTimeout(
-      () => window.scrollTo(...savedPosition),
-      TRANSITION_DELAY
-    );
+    window.setTimeout(() => window.scrollTo(...savedPosition));
   }
   return false;
 };
