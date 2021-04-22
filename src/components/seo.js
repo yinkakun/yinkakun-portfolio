@@ -24,6 +24,7 @@ const Seo = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
+  const pageTitle = title || defaultTitle;
   const ogImage = `${site.siteMetadata?.siteUrl}${site.siteMetadata?.defaultOgImage}`;
 
   return (
@@ -45,7 +46,7 @@ const Seo = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:title`,
-          content: title || defaultTitle,
+          content: pageTitle,
         },
         {
           name: 'og:image',
@@ -69,7 +70,7 @@ const Seo = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:title`,
-          content: title || defaultTitle,
+          content: pageTitle,
         },
         {
           name: `twitter:description`,
