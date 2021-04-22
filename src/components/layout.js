@@ -7,16 +7,12 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './theme';
 import Fade from 'react-reveal/Fade';
 
-const Layout = ({ children, title, description, socialImage = '' }) => {
+const Layout = ({ children, title, description }) => {
   return (
     <ThemeProvider theme={theme}>
       <Fragment>
         <GlobalStyle />
-        <Seo
-          title={title}
-          description={description}
-          socialImage={socialImage}
-        />
+        <Seo title={title} description={description} />
         <LayoutWrapper>
           <Container>
             <Fade bottom cascade>

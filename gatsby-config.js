@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `yinka adedire`,
     description: `self-taught frontend developer interested in jamstack`,
+    siteUrl: 'https://yinkakun.vercel.app',
+    defaultOgImage: '/og-image.png',
     social: {
       twitter: `yinkakun`,
     },
