@@ -5,6 +5,7 @@ import GlobalStyle from './global-styles';
 import styled from 'styled-components';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './theme';
+import Fade from 'react-reveal/Fade';
 
 const Layout = ({ children, title, description, socialImage = '' }) => {
   return (
@@ -17,7 +18,11 @@ const Layout = ({ children, title, description, socialImage = '' }) => {
           socialImage={socialImage}
         />
         <LayoutWrapper>
-          <Container>{children}</Container>
+          <Container>
+            <Fade bottom cascade>
+              {children}
+            </Fade>
+          </Container>
         </LayoutWrapper>
       </Fragment>
     </ThemeProvider>
