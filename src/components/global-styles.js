@@ -78,7 +78,7 @@ html {
 }
 
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -111,7 +111,7 @@ p {
 }
 
  p {
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
  

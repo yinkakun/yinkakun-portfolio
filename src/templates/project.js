@@ -10,78 +10,69 @@ const ProjectTemplate = ({ data }) => {
 
   return (
     <Layout>
-      <ProjectWrapper>
-        <ColorWord color="grey">
-          <Link to="/">Go Back Home</Link>
-        </ColorWord>
+      <ColorWord color="grey">
+        <Link to="/">Go Back Home</Link>
+      </ColorWord>
 
-        <Title>{frontmatter.title}</Title>
-        <p>{frontmatter.description}</p>
+      <Title>{frontmatter.title}</Title>
+      <p>{frontmatter.description}</p>
 
-        <table>
-          <tr>
-            <ColorWord color="grey">
-              <th>stack:</th>
+      <table>
+        <tr>
+          <ColorWord color="grey">
+            <th>stack:</th>
+          </ColorWord>
+          <td>
+            <ColorWord color="orange">
+              <Stack>
+                {frontmatter.stack.map((stack) => {
+                  return <span>{stack}</span>;
+                })}
+              </Stack>
             </ColorWord>
-            <td>
-              <ColorWord color="orange">
-                <Stack>
-                  {frontmatter.stack.map((stack) => {
-                    return <span>{stack}</span>;
-                  })}
-                </Stack>
-              </ColorWord>
-            </td>
-          </tr>
+          </td>
+        </tr>
 
-          <tr>
-            <ColorWord color="grey">
-              <th>code:</th>
+        <tr>
+          <ColorWord color="grey">
+            <th>code:</th>
+          </ColorWord>
+          <td>
+            <ColorWord color="green">
+              <a href={frontmatter.code}>github repo</a>
             </ColorWord>
-            <td>
-              <ColorWord color="green">
-                <a href={frontmatter.code}>github repo</a>
-              </ColorWord>
-            </td>
-          </tr>
+          </td>
+        </tr>
 
-          <tr>
-            <ColorWord color="grey">
-              <th>live:</th>
+        <tr>
+          <ColorWord color="grey">
+            <th>live:</th>
+          </ColorWord>
+          <td>
+            <ColorWord color="green">
+              <a href={frontmatter.live}>live site</a>
             </ColorWord>
-            <td>
-              <ColorWord color="green">
-                <a href={frontmatter.live}>live site</a>
-              </ColorWord>
-            </td>
-          </tr>
-        </table>
+          </td>
+        </tr>
+      </table>
 
-        <ProjectContent dangerouslySetInnerHTML={{ __html: html }} />
+      <ProjectContent dangerouslySetInnerHTML={{ __html: html }} />
 
-        <OtherProjects>
-          <ColorWord color="grey">i also built</ColorWord>{' '}
-          {otherProjects.map((project) => {
-            return (
-              <ColorWord color="blue">
-                <Link to={project.fields.slug}>
-                  {project.frontmatter.title}
-                </Link>
-              </ColorWord>
-            );
-          })}
-        </OtherProjects>
-      </ProjectWrapper>
+      <OtherProjects>
+        <ColorWord color="grey">i also built</ColorWord>{' '}
+        {otherProjects.map((project) => {
+          return (
+            <ColorWord color="blue">
+              <Link to={project.fields.slug}>{project.frontmatter.title}</Link>
+            </ColorWord>
+          );
+        })}
+      </OtherProjects>
     </Layout>
   );
 };
 
 export default ProjectTemplate;
-
-const ProjectWrapper = styled.div`
-  padding-top: calc(var(--size-900) * 2);
-  padding-bottom: calc(var(--size-900) * 2);
-`;
 
 const Title = styled.h1`
   font-size: var(--size-700);

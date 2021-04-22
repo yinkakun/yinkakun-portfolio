@@ -27,6 +27,8 @@ const Layout = ({ children, title, description, socialImage = '' }) => {
 export default Layout;
 
 const LayoutWrapper = styled.main`
+  padding-top: calc(var(--size-900) * 2);
+  padding-bottom: calc(var(--size-900) * 2);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

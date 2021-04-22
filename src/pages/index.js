@@ -15,16 +15,45 @@ const IndexPage = () => {
         </p>
 
         <p>
-          i'm a frontend developer interested in{' '}
+          on the internet, i go by <ColorWord color="pink">yinkakun</ColorWord>{' '}
+          [yinka <ColorWord color="grey">my first name</ColorWord> + kun{' '}
+          <ColorWord color="grey">
+            japanese honorific for young males,
+          </ColorWord>{' '}
+          get it?]
+        </p>
+
+        <p>
+          i'm a self-taught frontend developer interested in{' '}
           <ColorWord color="orange">jamstack</ColorWord>{' '}
         </p>
+
+        <p>
+          my love of beautiful websites made me curious about how they were
+          made. after lots of googling, i discovered web development which led
+          to my interest in frontend development. since then, i've been honing
+          my skills and building projects to apply what i've learnt.
+        </p>
+
         <p>
           my technical skills includes
           <ColorWord color="orange">
             {' '}
-            html & css, javascript, react, git, gatsby, styled-components
+            html & css, javascript, react, gatsby, eleventy
           </ColorWord>
         </p>
+
+        <p>
+          i built <ColorWord color="yellow">eleventy-duo</ColorWord>, a minimal
+          & beautiful personal <ColorWord color="orange">gatsbyjs</ColorWord>{' '}
+          blog starter with a nice glassmorphism ui coupled with{' '}
+          <ColorWord color="orange">netlify cms</ColorWord> for content
+          management -{' '}
+          <ColorWord color="blue">
+            <Link to="/gatsby-starter-glass">view project</Link>
+          </ColorWord>
+        </p>
+
         <p>
           i built <ColorWord color="yellow">gatsby-starter-glass</ColorWord>, a
           minimal & beautiful personal{' '}
@@ -36,6 +65,7 @@ const IndexPage = () => {
             <Link to="/gatsby-starter-glass">view project</Link>
           </ColorWord>
         </p>
+
         <p>
           i built <ColorWord color="yellow"> planthome</ColorWord>, an
           e-commerce landing page for a fictitious plant selling company. built
@@ -53,9 +83,9 @@ const IndexPage = () => {
           </ColorWord>
         </p>
         <p>
-          you can have a look at my resume{' '}
+          you can{' '}
           <ColorWord color="green">
-            <a href="https://docs.google.com">here</a>
+            <a href="https://docs.google.com">have a look at my resume here</a>
           </ColorWord>
         </p>
 
@@ -69,18 +99,11 @@ const IndexPage = () => {
             <a href="https://twitter.com/yinkakun">bird app</a>
           </ColorWord>
         </p>
-        {/* <p>
-          my love of beautiful websites made discover web development which led
-          to my interest in frontend development in 2019.
-        </p>
-        <p>
-          apart from tech, i like animes, binge watch netflix series, novels.
-        </p> */}
 
-        {/* <p>
-          i named myself yinkakun - yinka [my first name] + kun [japanese
-          honorific for young males], get it?
-        </p> */}
+        <p>
+          apart from tech, i like to watch animes, binge watch tv series, read
+          novels.
+        </p>
       </div>
     </Layout>
   );
