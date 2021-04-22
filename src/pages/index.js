@@ -5,7 +5,10 @@ import { Link } from 'gatsby';
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout
+      title=""
+      description="porfolio site of yinka adedire, self-taught frontend developer"
+    >
       <div>
         <p>
           <ColorWord color="grey">hello, world!</ColorWord>
@@ -103,6 +106,14 @@ const IndexPage = () => {
         <p>
           apart from tech, i like to watch animes, binge watch tv series, read
           novels.
+        </p>
+
+        <p>
+          <ColorWord color="grey">
+            this site is statically generated with gatsbyjs, the slide up
+            animation with react-reveal, styled using styled-components & the
+            font family, ibm plex mono from google fonts.
+          </ColorWord>
         </p>
       </div>
     </Layout>

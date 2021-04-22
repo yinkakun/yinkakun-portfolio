@@ -9,7 +9,7 @@ const ProjectTemplate = ({ data }) => {
   const otherProjects = data.otherProjects.nodes;
 
   return (
-    <Layout>
+    <Layout title={frontmatter.title.toLowerCase()}>
       <ColorWord color="grey">
         <Link to="/">Go Back Home</Link>
       </ColorWord>
