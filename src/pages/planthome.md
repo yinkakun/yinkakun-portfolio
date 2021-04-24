@@ -2,14 +2,41 @@
 title: Planthome
 description: an e-commerce landing page for a fictitious plant selling company. built with gatsbyjs and coupled with sanity cms for content management
 stack: [gatsby, react, styled-components, sanity-cms]
-code: https://github.com/yinkakun/gatsby-starter-glass
-live: https://gatsbyglass.netlify.app
+code: https://github.com/yinkakun/planthome
+live: https://planthomeyinkakun.vercel.app
 ---
 
-## Project Purpose and Goal
+## purpose and goal
 
-This project included 3 phases and iterations of the site. Phase 1 simply allowed users to enter their email to be alerted to when the product was released. Phase 2 was quite larger and is designed to introduce users to the Coffee By Benjamin product and answer any questions they may have. Phase three is by far the largest and most complex, as it includes the full shop and cart pages as well as the logic and backend that goes along with it.
+I wanted to get really good with Gatsby, and that's by building many projects. So I decided to build another Gatsby project.
 
-I found that the best way to implement these 3 phases without having separate versions saved was to incorporate a feature flag that will pass the current state that should be displayed and then render content conditionally.
+Before this project, the UIs of all the projects I've built were designed by me tinkering around until it looks good to me, I wanted to implement a design created by a professional designer and also have experience implementing a design file.
 
-![Gatsby Glass](../images/gatsby-starter-glass.png)
+So I asked one of my UI designer friends on the web, I got a Figma Landing Page design to implement.
+
+## general requirement
+
+As always, apart from the bare minimum that the generated website must be fast and responsive. I had a few requirements in mind to be able to call this project a success:
+
+The resulting website must match the design on the Figma file.
+
+Non-technical users should be able to add and update the site content and use a CMS that I haven't used before.
+
+Add simple animations.
+
+## stack explanation
+
+My preferred method of styling in React app is Styled-components. Great things have been said about it already, it lets you write actual CSS and it's popular.
+
+I used Sanity CMS for content management because I've been hearing great things about it and wanted to try it out.
+
+I used React-Reveal for the slide-up animation because it's simple and fits in my use case.
+
+## challenges
+
+Sanity CMS wasn't as straightforward as the other CMS I've used, I had some difficulties getting up and running. Thanks for the great doc.
+
+# wrapping up
+
+I learned to implement designs
+I learned another CMS. Got more experience with GatsbyJS.

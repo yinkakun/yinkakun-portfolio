@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `yinka adedire`,
+    titleTemplate: '%s - yinka adedire',
     description: `self-taught frontend developer interested in jamstack`,
-    siteUrl: 'https://yinkakun.vercel.app',
-    defaultOgImage: '/og-image.png',
-    social: {
-      twitter: `yinkakun`,
-    },
+    twitterUsername: `@yinkakun`,
+    url: 'https://yinkakun.vercel.app',
+    twitterCardImage: '/twitter-card-image.png',
+    openGraphImage: '/open-graph-image.png',
   },
 
   plugins: [

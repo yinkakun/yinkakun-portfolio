@@ -5,7 +5,7 @@ import GlobalStyle from './global-styles';
 import styled from 'styled-components';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './theme';
-import Fade from 'react-reveal/Fade';
+import { motion } from 'framer-motion';
 
 const Layout = ({ children, title, description }) => {
   return (
@@ -13,12 +13,20 @@ const Layout = ({ children, title, description }) => {
       <Fragment>
         <GlobalStyle />
         <Seo title={title} description={description} />
-        <LayoutWrapper>
-          <Container>
-            <Fade bottom cascade>
-              {children}
-            </Fade>
-          </Container>
+        <LayoutWrapper
+          layout
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          exit={{
+            opacity: 0,
+          }}
+          transition={{ duration: 0.3, ease: 'easeInOut' }}
+        >
+          <Container>{children}</Container>
         </LayoutWrapper>
       </Fragment>
     </ThemeProvider>
@@ -27,7 +35,7 @@ const Layout = ({ children, title, description }) => {
 
 export default Layout;
 
-const LayoutWrapper = styled.main`
+const LayoutWrapper = styled(motion.main)`
   padding-top: calc(var(--size-900) * 2);
   padding-bottom: calc(var(--size-900) * 2);
   min-height: 100vh;

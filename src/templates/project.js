@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import { graphql, Link } from 'gatsby';
 import ColorWord from '../components/color-word';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 const ProjectTemplate = ({ data }) => {
   const { html, frontmatter } = data.project;
@@ -10,64 +11,70 @@ const ProjectTemplate = ({ data }) => {
 
   return (
     <Layout title={frontmatter.title.toLowerCase()}>
-      <ColorWord color="grey">
-        <Link to="/">Go Back Home</Link>
-      </ColorWord>
+      <Fade>
+        <ColorWord color="grey">
+          <Link to="/">Go Back Home</Link>
+        </ColorWord>
 
-      <Title>{frontmatter.title}</Title>
-      <p>{frontmatter.description}</p>
+        <Title>{frontmatter.title}</Title>
+        <p>{frontmatter.description}</p>
 
-      <table>
-        <tr>
-          <ColorWord color="grey">
-            <th>stack:</th>
-          </ColorWord>
-          <td>
-            <ColorWord color="orange">
-              <Stack>
-                {frontmatter.stack.map((stack) => {
-                  return <span>{stack}</span>;
-                })}
-              </Stack>
-            </ColorWord>
-          </td>
-        </tr>
+        <table>
+          <tbody>
+            <tr>
+              <th>
+                <ColorWord color="grey">stack:</ColorWord>
+              </th>
+              <td>
+                <ColorWord color="orange">
+                  <Stack>
+                    {frontmatter.stack.map((stack) => {
+                      return <span key={stack}>{stack}</span>;
+                    })}
+                  </Stack>
+                </ColorWord>
+              </td>
+            </tr>
 
-        <tr>
-          <ColorWord color="grey">
-            <th>code:</th>
-          </ColorWord>
-          <td>
-            <ColorWord color="green">
-              <a href={frontmatter.code}>github repo</a>
-            </ColorWord>
-          </td>
-        </tr>
+            <tr>
+              <th>
+                <ColorWord color="grey">code:</ColorWord>
+              </th>
+              <td>
+                <ColorWord color="green">
+                  <a href={frontmatter.code}>github repo</a>
+                </ColorWord>
+              </td>
+            </tr>
 
-        <tr>
-          <ColorWord color="grey">
-            <th>live:</th>
-          </ColorWord>
-          <td>
-            <ColorWord color="green">
-              <a href={frontmatter.live}>live site</a>
-            </ColorWord>
-          </td>
-        </tr>
-      </table>
+            <tr>
+              <th>
+                <ColorWord color="grey">live:</ColorWord>
+              </th>
+              <td>
+                <ColorWord color="green">
+                  <a href={frontmatter.live}>live site</a>
+                </ColorWord>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-      <ProjectContent dangerouslySetInnerHTML={{ __html: html }} />
+        <ProjectContent dangerouslySetInnerHTML={{ __html: html }} />
 
-      <OtherProjects>
-        <ColorWord color="grey">i also built</ColorWord>{' '}
-        {otherProjects.map((project) => {
-          return (
-            <ColorWord color="blue">
-              <Link to={project.fields.slug}>{project.frontmatter.title}</Link>
-            </ColorWord>
-          );
-        })}
-      </OtherProjects>
+        <OtherProjects>
+          <ColorWord color="grey">i also built</ColorWord>{' '}
+          {otherProjects.map((project) => {
+            return (
+              <ColorWord color="blue" key={project.fields.slug}>
+                <Link to={project.fields.slug}>
+                  {project.frontmatter.title}
+                </Link>
+              </ColorWord>
+            );
+          })}
+        </OtherProjects>
+      </Fade>
     </Layout>
   );
 };
@@ -120,6 +127,10 @@ const ProjectContent = styled.section`
 
   h3 {
     font-size: var(--size-500);
+  }
+
+  img {
+    border: 10px solid hsla(7, 100%, 95%, 1);
   }
 `;
 
