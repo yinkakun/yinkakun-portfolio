@@ -74,7 +74,9 @@ const IndexPage = ({ data }) => {
         <p>
           you can{' '}
           <ColorWord color="green">
-            <a href="https://docs.google.com">have a look at my resume here</a>
+            <a href="/yinka-adedire's-resume.pdf">
+              have a look at my resume here
+            </a>
           </ColorWord>
         </p>
         <p>
