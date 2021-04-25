@@ -16,7 +16,7 @@ After reading the docs and several tutorials on the web and creating a few sampl
 
 Eleventy Duo is the resulting project - a minimal and beautiful eleventy starter for personal blogs.
 
-general requirement
+## general requirement
 
 I had a few requirements in mind to be able to call this project a success.
 

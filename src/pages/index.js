@@ -9,7 +9,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout
-      title="hello, world"
+      title="self-taught frontend developer interested in jamstack"
       description="porfolio site of yinka adedire, self-taught frontend developer"
     >
       <Fade bottom>

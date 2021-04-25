@@ -36,7 +36,7 @@ I used React-Reveal for the slide-up animation because it's simple and fits in m
 
 Sanity CMS wasn't as straightforward as the other CMS I've used, I had some difficulties getting up and running. Thanks for the great doc.
 
-# wrapping up
+## wrapping up
 
 I learned to implement designs
 I learned another CMS. Got more experience with GatsbyJS.
