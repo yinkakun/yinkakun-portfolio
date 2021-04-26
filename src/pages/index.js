@@ -9,8 +9,8 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout
-      title="self-taught frontend developer interested in jamstack"
-      description="porfolio site of yinka adedire, self-taught frontend developer"
+      title="Frontend Developer from Nigeria"
+      description="Porfolio site of Yinka Adedire, Frontend Developer from Nigeria"
     >
       <Fade bottom>
         <p>
@@ -21,9 +21,17 @@ const IndexPage = ({ data }) => {
             </span>{' '}
           </ColorWord>
         </p>
-        <p>
-          my name is <ColorWord color="pink">yinka adedire</ColorWord>
-        </p>
+
+        <h1>
+          <p>
+            my name is <ColorWord color="pink">yinka adedire</ColorWord>
+          </p>
+          <p>
+            i'm a <ColorWord color="orange">frontend developer </ColorWord>
+            <ColorWord color="grey">from nigeria.</ColorWord>
+          </p>
+        </h1>
+
         <p>
           on the internet, i go by <ColorWord color="pink">yinkakun</ColorWord>{' '}
           [yinka <ColorWord color="grey">my first name</ColorWord> + kun{' '}
@@ -32,10 +40,7 @@ const IndexPage = ({ data }) => {
           </ColorWord>{' '}
           get it?]
         </p>
-        <p>
-          i'm a self-taught frontend developer interested in{' '}
-          <ColorWord color="orange">jamstack</ColorWord>{' '}
-        </p>
+
         <p>
           my love of beautiful websites made me curious about how they were
           made. after lots of googling, i discovered web development which led

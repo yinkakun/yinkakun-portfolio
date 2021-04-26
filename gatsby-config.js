@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `yinka adedire`,
-    titleTemplate: '%s - yinka adedire',
+    title: `Yinka Adedire`,
+    titleTemplate: '%s - Yinka Adedire',
     description: `self-taught frontend developer interested in jamstack`,
     twitterUsername: `@yinkakun`,
     url: 'https://yinkakun.vercel.app',
