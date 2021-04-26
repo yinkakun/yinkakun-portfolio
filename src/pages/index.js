@@ -55,20 +55,17 @@ const IndexPage = ({ data }) => {
           </ColorWord>
         </p>
 
-        <div>
-          {projects.map(({ frontmatter, fields }) => {
-            return (
-              <p key={fields.slug}>
-                i built{' '}
-                <ColorWord color="yellow">{frontmatter.title}</ColorWord> -{' '}
-                {frontmatter.description}{' '}
-                <ColorWord color="blue">
-                  <Link to={fields.slug}>view project</Link>
-                </ColorWord>
-              </p>
-            );
-          })}
-        </div>
+        {projects.map(({ frontmatter, fields }) => {
+          return (
+            <p key={fields.slug}>
+              i built <ColorWord color="yellow">{frontmatter.title}</ColorWord>{' '}
+              - {frontmatter.description}{' '}
+              <ColorWord color="blue">
+                <Link to={fields.slug}>view project</Link>
+              </ColorWord>
+            </p>
+          );
+        })}
 
         <p>
           i've built a few other cool stuffs too, checkout{' '}
