@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import ColorWord from '../components/color-word';
 import { graphql, Link } from 'gatsby';
 import Fade from 'react-reveal/Fade';
+import styled from 'styled-components';
 
 const IndexPage = ({ data }) => {
   const projects = data.projects.nodes;
@@ -61,7 +62,7 @@ const IndexPage = ({ data }) => {
               i built <ColorWord color="yellow">{frontmatter.title}</ColorWord>{' '}
               - {frontmatter.description}{' '}
               <ColorWord color="blue">
-                <Link to={fields.slug}>view project</Link>
+                <ProjectLink to={fields.slug}>{`>>> `}view project</ProjectLink>
               </ColorWord>
             </p>
           );
@@ -120,6 +121,20 @@ const IndexPage = ({ data }) => {
 };
 
 export default IndexPage;
+
+const ProjectLink = styled(Link)`
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: color 300ms;
+  color: #f2690f;
+
+  &:hover {
+    color: pink;
+  }
+`;
 
 export const query = graphql`
   query {
