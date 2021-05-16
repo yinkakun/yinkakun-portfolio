@@ -37,7 +37,7 @@ const IndexPage = ({ data }) => {
           on the internet, i go by <ColorWord color="pink">yinkakun</ColorWord>{' '}
           [yinka <ColorWord color="grey">my first name</ColorWord> + kun{' '}
           <ColorWord color="grey">
-            japanese honorific for young males,
+            japanese honorific for young men,
           </ColorWord>{' '}
           get it?]
         </p>
