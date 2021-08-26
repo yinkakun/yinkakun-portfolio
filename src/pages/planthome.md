@@ -1,9 +1,9 @@
 ---
 title: Planthome
 description: an e-commerce landing page for a fictitious plant selling company. built with gatsbyjs and coupled with sanity cms for content management
-stack: [gatsby, react, styled-components, sanity-cms]
+stack: [typescript, gatsby, react, tailwindcss, sanity-cms]
 code: https://github.com/yinkakun/planthome
-live: https://planthomeyinkakun.vercel.app
+live: https://planthomehq.vercel.app
 ---
 
 ## purpose and goal
@@ -26,7 +26,7 @@ Add simple animations.
 
 ## stack explanation
 
-My preferred method of styling in React app is Styled-components. Great things have been said about it already, it lets you write actual CSS and it's popular.
+I just started learning Tailwind CSS so I decided to use it in this project.
 
 I used Sanity CMS for content management because I've been hearing great things about it and wanted to try it out.
 
@@ -39,4 +39,4 @@ Sanity CMS wasn't as straightforward as the other CMS I've used, I had some diff
 ## wrapping up
 
 I learned to implement designs
-I learned another CMS. Got more experience with GatsbyJS.
+I learned another CMS. Got more experience with GatsbyJS and Typescript.
