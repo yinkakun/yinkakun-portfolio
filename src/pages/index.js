@@ -52,8 +52,8 @@ const IndexPage = ({ data }) => {
           my technical skills includes
           <ColorWord color="orange">
             {' '}
-            html & css, javascript, react, gatsby, eleventy, git, graphql
-          </ColorWord>
+            html & css, javascript, typescript, react, gatsby, eleventy, git, graphql, styles-components, tailwindcss
+          </ColorWord> and some other dot js libraries.
         </p>
 
         {projects.map(({ frontmatter, fields }) => {
