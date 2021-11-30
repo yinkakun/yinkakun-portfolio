@@ -36,7 +36,9 @@ const SEO = ({ title, description }) => {
         <meta property="og:description" content={seo.description} />
       )}
 
-      {seo.image && <meta property="og:image" content={seo.openGraphImage} />}
+      {seo.openGraphImage && (
+        <meta property="og:image" content={seo.openGraphImage} />
+      )}
 
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="627" />
@@ -68,7 +70,6 @@ const query = graphql`
         titleTemplate
         defaultDescription: description
         siteUrl: url
-        twitterUsername
         openGraphImage
       }
     }
