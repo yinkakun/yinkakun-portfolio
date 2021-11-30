@@ -42,6 +42,13 @@ const SEO = ({ title, description }) => {
 
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="627" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="twitter:domain" content={siteUrl} />
+      <meta property="twitter:url" content={seo.url} />
+      <meta name="twitter:title" content={seo.title} />
+      <meta name="twitter:description" content={seo.description} />
+      <meta name="twitter:image" content={seo.openGraphImage} />
     </Helmet>
   );
 };
