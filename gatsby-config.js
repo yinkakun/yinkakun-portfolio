@@ -5,7 +5,6 @@ module.exports = {
     description: `self-taught frontend developer interested in jamstack`,
     twitterUsername: `@yinkakun`,
     url: 'https://yinkakun.vercel.app',
-    twitterCardImage: '/twitter-card-image.png',
     openGraphImage: '/open-graph-image.png',
   },
 

@@ -13,8 +13,6 @@ const SEO = ({ title, description }) => {
     titleTemplate,
     defaultDescription,
     siteUrl,
-    twitterUsername,
-    twitterCardImage,
     openGraphImage,
   } = site.siteMetadata;
 
@@ -22,7 +20,6 @@ const SEO = ({ title, description }) => {
     title: title || defaultTitle,
     description: description || defaultDescription,
     openGraphImage: `${siteUrl}${openGraphImage}`,
-    twitterCardImage: `${siteUrl}${twitterCardImage}`,
     url: `${siteUrl}${pathname}`,
   };
 
@@ -41,21 +38,8 @@ const SEO = ({ title, description }) => {
 
       {seo.image && <meta property="og:image" content={seo.openGraphImage} />}
 
-      <meta name="twitter:card" content="summary" />
-
-      {twitterUsername && (
-        <meta name="twitter:creator" content={twitterUsername} />
-      )}
-
-      {seo.title && <meta name="twitter:title" content={seo.title} />}
-
-      {seo.description && (
-        <meta name="twitter:description" content={seo.description} />
-      )}
-
-      {seo.twitterCardImage && (
-        <meta name="twitter:image" content={seo.twitterCardImage} />
-      )}
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="627" />
     </Helmet>
   );
 };
@@ -85,7 +69,6 @@ const query = graphql`
         defaultDescription: description
         siteUrl: url
         twitterUsername
-        twitterCardImage
         openGraphImage
       }
     }
