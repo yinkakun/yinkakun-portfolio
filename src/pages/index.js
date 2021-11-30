@@ -10,8 +10,8 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout
-      title="Frontend Developer from Nigeria"
-      description="Porfolio site of Yinka Adedire, Frontend Developer from Nigeria"
+      title="Frontend Developer"
+      description="Porfolio site of Yinka Adedire, Frontend Developer"
     >
       <Fade bottom>
         <p>
@@ -29,16 +29,13 @@ const IndexPage = ({ data }) => {
           </p>
           <p>
             i'm a <ColorWord color="orange">frontend developer </ColorWord>
-            <ColorWord color="grey">from nigeria.</ColorWord>
           </p>
         </h1>
 
         <p>
           on the internet, i go by <ColorWord color="pink">yinkakun</ColorWord>{' '}
           [yinka <ColorWord color="grey">my first name</ColorWord> + kun{' '}
-          <ColorWord color="grey">
-            japanese honorific for young men,
-          </ColorWord>{' '}
+          <ColorWord color="grey">japanese honorific for young men,</ColorWord>{' '}
           get it?]
         </p>
 
@@ -52,8 +49,10 @@ const IndexPage = ({ data }) => {
           my technical skills includes
           <ColorWord color="orange">
             {' '}
-            html & css, javascript, typescript, react, gatsby, eleventy, git, graphql, styles-components, tailwindcss
-          </ColorWord> and some other dot js libraries.
+            html & css, javascript, typescript, react, gatsby, eleventy, git,
+            graphql, styled-components, tailwindcss, chakra-ui,
+          </ColorWord>{' '}
+          and some other dot js libraries.
         </p>
 
         {projects.map(({ frontmatter, fields }) => {
@@ -98,13 +97,14 @@ const IndexPage = ({ data }) => {
         </p>
         <p>
           <ColorWord color="grey">
-            created with 'vibes and insha allah' by{' '}
+            built by me -{' '}
             <ColorWord color="green">
               <a href="https://twitter.com/yinkakun">yinka adedire</a>
             </ColorWord>{' '}
             with gatsbyjs for static site generation, the slide up animation
             with react-reveal, styled using styled-components and the font
-            family, 'ibm plex mono' from google fonts. you can checkout{' '}
+            family, 'ibm plex mono' from google fonts. you're welcome to
+            checkout{' '}
             <ColorWord color="green">
               <a href="https://github.com/yinkakun/yinkakun-portfolio">
                 the sourcecode
