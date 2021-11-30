@@ -1,8 +1,8 @@
-# [yinkakun.netlify.app](https://yinkakun.netlify.app)
+# Portfolio site of Frontend Developer, Yinka Adedire.
 
-[![Screenshot of yinkakun.netlify.app](./screenshot.png)]
+Built with GatsbyJS. - [Live Site](https://yinkakun.vercel.app)
 
-Personal site and portfolio of frontend developer Yinka Adedire, built with Gatsby and deployed with Netlify.
+![Screenshot of live site](./site-shot.png)
 
 Build Setup
 
