@@ -25,19 +25,12 @@ const IndexPage = ({ data }) => {
 
         <h1>
           <p>
-            my name is <ColorWord color="pink">yinka adedire</ColorWord>
+            i'm <ColorWord color="pink">yinka</ColorWord>
           </p>
           <p>
-            i'm a <ColorWord color="orange">frontend developer </ColorWord>
+            a <ColorWord color="orange">frontend developer </ColorWord>
           </p>
         </h1>
-
-        <p>
-          on the internet, i go by <ColorWord color="pink">yinkakun</ColorWord>{' '}
-          [yinka <ColorWord color="grey">my first name</ColorWord> + kun{' '}
-          <ColorWord color="grey">japanese honorific for young men,</ColorWord>{' '}
-          get it?]
-        </p>
 
         <p>
           my love of beautiful websites made me curious about how they were
