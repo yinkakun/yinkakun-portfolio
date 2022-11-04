@@ -1,9 +1,9 @@
-import React from 'react';
-import Layout from '../components/layout';
-import ColorWord from '../components/color-word';
-import { graphql, Link } from 'gatsby';
-import Fade from 'react-reveal/Fade';
-import styled from 'styled-components';
+import React from "react";
+import Layout from "../components/layout";
+import ColorWord from "../components/color-word";
+import { graphql, Link } from "gatsby";
+import Fade from "react-reveal/Fade";
+import styled from "styled-components";
 
 const IndexPage = ({ data }) => {
   const projects = data.projects.nodes;
@@ -16,10 +16,10 @@ const IndexPage = ({ data }) => {
       <Fade bottom>
         <p>
           <ColorWord color="grey">
-            hello, world!{' '}
+            hello, world!{" "}
             <span role="img" aria-label="sparkle emoji">
               🚀
-            </span>{' '}
+            </span>{" "}
           </ColorWord>
         </p>
 
@@ -41,18 +41,18 @@ const IndexPage = ({ data }) => {
         <p>
           my technical skills includes
           <ColorWord color="orange">
-            {' '}
+            {" "}
             html & css, javascript, typescript, react, gatsby, eleventy, git,
             graphql, styled-components, tailwindcss, chakra-ui,
-          </ColorWord>{' '}
+          </ColorWord>{" "}
           and some other dot js libraries.
         </p>
 
         {projects.map(({ frontmatter, fields }) => {
           return (
             <p key={fields.slug}>
-              i built <ColorWord color="yellow">{frontmatter.title}</ColorWord>{' '}
-              - {frontmatter.description}{' '}
+              i built <ColorWord color="yellow">{frontmatter.title}</ColorWord>{" "}
+              - {frontmatter.description}{" "}
               <ColorWord color="blue">
                 <ProjectLink to={fields.slug}>{`>>> `}view project</ProjectLink>
               </ColorWord>
@@ -61,25 +61,25 @@ const IndexPage = ({ data }) => {
         })}
 
         <p>
-          i've built a few other cool stuffs too, checkout{' '}
+          i've built a few other cool stuffs too, checkout{" "}
           <ColorWord color="green">
             <a href="https://github.com/yinkakun">my github</a>
           </ColorWord>
         </p>
         <p>
-          you can{' '}
+          you can{" "}
           <ColorWord color="green">
-            <a href="/yinka-adedire's-resume.pdf">
+            <a href="/01-yinka-adedire-resume.pdf">
               have a look at my resume here
             </a>
           </ColorWord>
         </p>
         <p>
-          you can email me at{' '}
+          you can email me at{" "}
           <ColorWord color="green">
             <a href="mailto:yinkakun@gmail.com">yinkakun@gmail.com</a>
-          </ColorWord>{' '}
-          or dm me on{' '}
+          </ColorWord>{" "}
+          or dm me on{" "}
           <ColorWord color="green">
             <a href="https://twitter.com/yinkakun">twitter</a>
           </ColorWord>
@@ -90,19 +90,19 @@ const IndexPage = ({ data }) => {
         </p>
         <p>
           <ColorWord color="grey">
-            built by me -{' '}
+            built by me -{" "}
             <ColorWord color="green">
               <a href="https://twitter.com/yinkakun">yinka adedire</a>
-            </ColorWord>{' '}
+            </ColorWord>{" "}
             with gatsbyjs for static site generation, the slide up animation
             with react-reveal, styled using styled-components and the font
             family, 'ibm plex mono' from google fonts. you're welcome to
-            checkout{' '}
+            checkout{" "}
             <ColorWord color="green">
               <a href="https://github.com/yinkakun/yinkakun-portfolio">
                 the sourcecode
               </a>
-            </ColorWord>{' '}
+            </ColorWord>{" "}
             <span role="img" aria-label="sparkle emoji">
               ✨
             </span>
